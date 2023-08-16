@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        function fibo(){
+            let a=0,b=1,c,i;
+                if(n==0)
+                 return a;
+                for(i=1; i<=n; i++){
+                    c = a + b;
+                    a = b;
+                    b = c;
+                }
+                return b;
+        }
+            let n = 9;
+            document.write(fibo(n))
+            
+    </script>
+</body>
+</html>

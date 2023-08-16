@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="table1">
+    <input type="text" id="table2">
+    <input type="submit" onclick="math()">
+
+    <h1 id="ans"></h1>
+
+    <script>
+        function math(){
+            let m = parseInt(document.getElementById('table1').value);
+            let n = parseInt(document.getElementById('table2').value);
+            let multi = 0;
+
+            for(i=1; i<=m; i++){
+                multi = multi * i;
+            }
+            document.getElementById('ans').innerHTML = m,"*",i,"=",multi;
+            for(i=1; i<=n; i++){
+                multi = multi * i;
+            }
+            document.getElementById('ans').innerHTML = n,"*",i,"=",multi;
+        }
+    </script>
+
+</body>
+</html>
